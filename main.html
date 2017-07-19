@@ -1,0 +1,25 @@
+							<div style="max-width:600px;margin-top:30px">
+								<form ng-submit="doConvert()" method="post">
+									
+									<h2>Cobalt Pig Latin Exercise</h2>
+									
+									<div style="color:red; width:100%; min-height:1.8em; font-size: 1.5em; margin-top:20px">{{convert.error}}</div>
+									
+									<div class="input-group form-group">
+										<span class="input-group-addon"><i class="fa fa-edit fa-fw"></i></span>
+										<input class="form-control" ng-model="converter.userentry" type="text" autocapitalize="off" autocorrect="off" placeholder="English words/sentences" required>
+									</div>
+									
+									<div class="">
+										<input  class="btn btn-primary btn-lg btn-block" type="submit" name="submit" value="Convert">
+									</div>
+									
+								</form>
+								
+									<div style="font-size: 1.5em; margin:20px 0px 5px 0px">Converted Text:</div>
+									<div style="color:red; width:100%; min-height:1.8em; font-size: 1.5em;">{{convert.text}}</div>
+									
+									
+									<div style="font-size: 1.5em; margin:20px 0px 5px 0px">History:</div>
+									<div style="color:red; width:100%; min-height:1.8em; font-size: 1.5em;" ng-bind-html="converthistory"></div>
+							</div>
